@@ -14,8 +14,8 @@ public class StringReverse {
      */
     public String reverse(String str){
         int length = str.length();
-        StringBuilder reversed = new StringBuilder(str); 
-        for(int i = length; i >= 0; i--) {
+        StringBuilder reversed = new StringBuilder(length); 
+        for(int i = length-1; i >= 0; i--) {
             reversed.append(str.charAt(i));
         }
         return reversed.toString();
